@@ -1,0 +1,69 @@
+
+
+.navbar{
+    background-image: url('../src/images/back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 12vh;
+    border-radius: 15px;
+    .blur{
+        position: relative;
+        background: inherit;
+        box-shadow: 0px 0px 1rem 0  rgba(225, 225, 225, 0.5); 
+
+        &::before{
+            content: "";
+                background: inherit;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                box-shadow: inset 0 0 2000px rgba(225, 225, 225, 0.5);   
+                filter: blur(11px);
+                margin: -100px;
+                z-index: 1;
+        }
+        z-index: 1;
+    }
+    .content{
+        z-index: 5;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            height: 12vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                width: 15vw;
+                margin-left: 5vw;
+            }
+        }
+        .auth{
+            display: flex;
+            height: 12vh;
+            flex-direction: column;
+            justify-content: center;
+            .checkIn{
+                display: flex;
+                flex-direction: row;
+                margin-right: 1vw;
+                .MuiSvgIcon-root{
+                    color: #ef3c23;
+                    font-size: xxx-large;
+                    cursor: pointer;
+                }
+            }
+            button{
+                margin-right: 3vw;
+            }
+        }
+    }
+}

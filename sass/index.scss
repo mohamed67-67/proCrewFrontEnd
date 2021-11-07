@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Sarabun:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+
+@import './navbar';
+@import './home';
+@import './login';
+@import './modal';
+@import './signup';
+@import './user';
+
+
+body{
+    background-image: url('../src/images/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background:#706161; 
+        border-radius: 10px;
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+
+

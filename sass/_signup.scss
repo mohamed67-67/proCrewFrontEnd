@@ -1,0 +1,58 @@
+.signup{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    .form{
+        height: 70vh;
+        width: 30vw;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0px;
+        position: relative;
+        .lock{
+            .MuiSvgIcon-root{
+                width: 30px;
+                height: 30px;
+                background-color: #9C27B0;
+                color: white;
+                border-radius: 50%;
+                font-size: 1.1rem;
+                padding: 10px;
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 75%;
+            width: 80%;
+            margin: 0 auto;
+            .name{
+                display: flex;
+                justify-content: space-between;
+                .MuiInput-root{
+                    width: 90% !important;
+                }
+            }
+            p{
+                color: red !important;
+            }
+        }
+    }
+    a{
+        position: absolute;
+        color: blue;
+        text-decoration: underline;
+        bottom: 1vw;
+        right: 3vw;
+        font-size: 0.85rem;
+    }
+}
